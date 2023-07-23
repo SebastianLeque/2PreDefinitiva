@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Link, NavLink } from 'react-router-dom'
+import CartWidget from "../CartWidget/CartWidget";
 import './NavBar.css'
 
 const Navbar = () => {
@@ -27,9 +28,9 @@ const Navbar = () => {
           <h1>Jugueteria</h1>
        </Link>
        <div className="carrito-num">
-            <img className='carrito' src={imgCarrito} alt="carrito" />
-            <p>5</p>
+            <CartWidget/>
         </div>
+
       <ul className={active}>
         <li className="nav__item">
             <NavLink to="/categoria/1"> Autos </NavLink>
