@@ -5,7 +5,7 @@ import ItemCount from '../ItemCount/ItemCount'
 import { useContext } from 'react'
 import { CarritoContext } from '../../context/CarritoContext'
 
-const ItemDetail = ({id, nombre, precio, img, stock, detalle}) => {
+const ItemDetail = ({id, nombre, precio, img, stock}) => {
   const [agregarCantidad, setAgregarCantidad] = useState(0)
 
   const {agregarProducto} = useContext(CarritoContext)
@@ -22,7 +22,7 @@ const ItemDetail = ({id, nombre, precio, img, stock, detalle}) => {
         <h2>Nombre del producto: {nombre} </h2>
         <h3>Precio: $ {precio} </h3>
         <h3>ID: {id} </h3>
-        <p>{detalle}</p>
+        <p> producto de excelente calidad</p>
         <img src={img} alt={nombre} />
         {
 
