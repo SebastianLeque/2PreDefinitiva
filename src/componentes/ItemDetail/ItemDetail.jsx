@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import ItemCount from '../ItemCount/ItemCount'
 import { useContext } from 'react'
 import { CarritoContext } from '../../context/CarritoContext'
+import './ItemDetail.css'
 
 const ItemDetail = ({id, nombre, precio, img, stock}) => {
   const [agregarCantidad, setAgregarCantidad] = useState(0)

@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const [active, setActive] = useState("nav__menu")
   const [toggleIcon, setToggleIcon] = useState("nav__toggler")
-  const imgCarrito = "https://static.vecteezy.com/system/resources/previews/004/999/463/non_2x/shopping-cart-icon-illustration-free-vector.jpg";
+  
 
     const navToggle = () => {
       active === 'nav__menu'

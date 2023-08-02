@@ -43,7 +43,7 @@ const Checkout = () => {
 
         Promise.all(
             orden.items.map(async (productoOrden) => {
-                const productoRef = doc(db, "productos", productoOrden.id);
+                const productoRef = doc(db, "Inventario", productoOrden.id);
                 const productoDoc = await getDoc(productoRef);
                 const stockActual = productoDoc.data().stock;
                 await updateDoc(productoRef, {
